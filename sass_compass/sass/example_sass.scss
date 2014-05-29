@@ -1,0 +1,40 @@
+@import "compass/reset";
+@import "compass/css3/border-radius";
+
+
+@mixin lineClamp ($linesNr: 2) {
+    display: -webkit-box;
+    display: box;
+    -webkit-line-clamp: $linesNr;
+    line-clamp: $linesNr;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+}
+
+@mixin noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+body {
+    background: black;
+    color: white;
+}
+
+.some-box {
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    background: white;
+    @include border-radius(4px, 4px);
+    text-align: center;
+    span {
+        color: grey;
+    }
+}

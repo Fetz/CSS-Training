@@ -1,0 +1,68 @@
+<!-- base html to use in the examples :: basic structure http://html5boilerplate.com/ -->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Positions</title>
+        <meta name="description" content="some description here">
+
+        <!-- set mobile meta information like initial zoom, max/min zoom and width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="../basic.css">
+        <link rel="stylesheet" href="positions.css">
+    </head>
+    <body>
+    
+        <article class="info-box">
+            <h1>Position Relative</h1>
+            <p>
+                Some tags have restrictions and can cause some error issues by the browser parser when fixing the wrong markup
+            </p>
+            <a href="http://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/" target="_blank">more info</a>
+        </article>
+        
+        <section>
+
+            <div class="examples relative-pos">
+                <h1>Relative x:10px y:10px</h1>
+                <div class="examples absolute-pos">
+                    <h1>Absolute x:10px y:10px</h1>
+                </div>
+            </div>
+
+            <div class="examples relative-pos">
+                <h1>Relative x:10px y:10px</h1>
+                <div class="examples relative-pos">
+                    <h1>Relative x:10px y:10px</h1>
+                </div>
+            </div>
+
+
+            <div class="examples relative-pos">
+                <h1>Relative x:10px y:10px</h1>
+                <div class="examples absolute-pos">
+                    <h1>Absolute x:10px y:10px</h1>
+                </div>
+                <div class="examples absolute-pos">
+                    <h1>Absolute x:10px y: width - 10px</h1>
+                </div>
+            </div>
+
+            <div class="examples relative-pos">
+                <h1>Relative x:10px y:10px</h1>
+                <div class="examples relative-pos">
+                    <h1>Relative x:10px y:10px</h1>
+                </div>
+                <div class="examples relative-pos">
+                    <h1>Relative x:10px y:10px</h1>
+                </div>
+            </div>
+            
+        </section>
+    </body>
+</html>

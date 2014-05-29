@@ -1,0 +1,92 @@
+/*
+    transition
+ */
+
+.image-container {
+    position: relative;
+    background: #000;
+    -webkit-perspective: 600px;
+    perspective: 600px;
+}
+
+.image-container, .image-container .image-front, .image-container .image-back  {
+    min-height: 276px;
+}
+
+.image-container .image-front, .image-container .image-back  {
+    background-image: url(../assets/img/bg.jpg);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    -moz-transition: -moz-transform 0.4s ease-in-out;
+    -o-transition: -o-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+}
+
+.lt-ie10 .image-container .image-back  {
+    filter: gray;
+}
+
+.image-container .image-back  {
+    -webkit-filter: grayscale(100%);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+
+.image-container:not(.flip) .image-back  {
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -o-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+}
+
+.image-container.flip .image-front {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+/*
+    Keyframes
+ */
+
+@-webkit-keyframes movehorizontal
+{
+    0%   { left: 0%; /* from: 0% */ }
+    50%   { left: 100%; }
+    100% { left: 0%; /* to: 0%   */ }
+}
+
+@keyframes movehorizontal
+{
+    0%   { left: 0%; /* from: 0% */ }
+    50%   { left: 100%; }
+    100% { left: 0%; /* to: 0%   */ }
+}
+
+.horizontal-anim-box {
+    position: absolute;
+    top: 100px;
+    left: 0%;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    background: #ff0000;
+    -webkit-animation: movehorizontal 3s linear 0 infinite;
+    animation: movehorizontal movehorizontal 3s linear 0 infinite;
+}
+

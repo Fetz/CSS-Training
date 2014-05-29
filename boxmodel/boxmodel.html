@@ -1,0 +1,58 @@
+<!-- base html to use in the examples :: basic structure http://html5boilerplate.com/ -->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Basic html</title>
+        <meta name="description" content="some description here">
+
+        <!-- set mobile meta information like initial zoom, max/min zoom and width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../basic.css">
+        <link rel="stylesheet" href="box_model.css">
+
+    </head>
+    <body>
+
+        <article class="info-box">
+            <h1>Box model</h1>
+            <figure class="box-model">
+                <div class="position-box">
+                    position
+                    <div class="margin-box">
+                        margin
+                        <div class="border-box">
+                            border
+                            <div class="padding-box">
+                                padding
+                                <div class="content-box">
+                                    content
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box_model" target="_blank">more info</a>
+        </article>
+
+        <section class="example-container">
+            <div class="border-affecting-size">
+                width:300px; heigth:300px;
+            </div>
+            <div class="border-not-affecting-size">
+                width:300px; heigth:300px;
+            </div>
+        </section>
+
+        <section class="example-gallery">
+            <div>item 1</div><div>item 2</div><div>item 3</div><div>item 4</div>
+        </section>
+        
+    </body>
+</html>

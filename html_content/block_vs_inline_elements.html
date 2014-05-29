@@ -1,0 +1,66 @@
+<!-- base html to use in the examples :: basic structure http://html5boilerplate.com/ -->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Inline vs Block</title>
+        <meta name="description" content="some description here">
+
+        <!-- set mobile meta information like initial zoom, max/min zoom and width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="../basic.css">
+        <link rel="stylesheet" href="inline_vs_block.css">
+    </head>
+    <body>
+        <!-- inline -->
+        <article class="info-box">
+            <header>
+                <h1>"Inline" Elements</h1>
+            </header>
+            <p>
+                Browser by default give "inline" elements <code><span class="property">display: </span><span class="value">inline</span>;</code>
+            </p>
+            <small>
+                In html5 corresponds roughly to the category of <a href="https://developer.mozilla.org/en-US/docs/HTML/Content_categories#Phrasing_content">phrasing content</a>, in HTML5
+            </small>
+            <footer>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">more info</a>
+            </footer>
+        </article>
+
+
+        <section class="examples">
+            <b>bold</b> <strong>strong</strong>
+            <a href="#">Anchor</a>
+        </section>
+        
+
+        <!-- block -->
+        <article class="info-box">
+            <header>
+                <h1>"Block" Elements</h1>
+            </header>
+            <p>
+                Browser by default give "block" elements <code><span class="property">display: </span><span class="value">block</span>;</code>
+            </p>
+            <small>
+                In html5 corresponds roughly to the category of <a href="https://developer.mozilla.org/en-US/docs/HTML/ Content_categories#Flow_content">flow content</a>, in HTML5
+            </small>
+            <footer>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">more info</a>
+                
+            </footer>
+        </article>
+
+        <section class="examples">
+            <p>paragraph</p>
+            <div>div</div>
+            <form>form</form>
+        </section>
+    </body>
+</html>

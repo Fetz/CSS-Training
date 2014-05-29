@@ -1,0 +1,89 @@
+.inline-center {
+    text-align: center;
+    padding: 10px;
+    background: #ccc;
+}
+
+/* display: inline ignore the width/heigth set directly, the width height use from the content inside; */
+.box, .inline-block-box, .inline-box, .margin-box, .float-box {
+    background: #ff0000;
+    width: 200px;
+    height: 50px;
+}
+
+.inline-block-box {
+    display: inline-block;
+}
+
+.inline-box {
+    display: inline;
+}
+
+.margin-box {
+    margin: 0 auto;
+}
+
+.float-examples {
+    text-align: center;
+}
+
+.float-container, .float-container-inline-block {
+    background: #ff0000;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.float-container-inline-block {
+    display: inline-block;
+}
+
+.float-box {
+    float: left;
+}
+
+.float-box {
+    border: 1px solid;
+}
+
+.clear-float {
+    clear: both;
+}
+
+.vertical-container {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background: #ff0000;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.fixed-size-box, .table-size-box {
+    background: #00ff00;
+    width: 150px;
+}
+
+.fixed-size-box {
+    height: 150px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -75px; /* half of width */
+    margin-left: -75px; /* half of heigth */
+}
+
+.table-container {
+    display: table;
+}
+
+.table-container > * {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-size-box {
+    text-align: left;
+    display: inline-block; 
+}

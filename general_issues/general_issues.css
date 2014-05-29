@@ -1,0 +1,32 @@
+.image-container {
+    padding: 0 10px;
+    background: #ff0000;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/*.image-container img {
+    display: block;
+}*/
+
+.extra-display-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background: #000000;
+}
+
+.extra-display-inline-block {
+    box-sizing: border-box;
+    text-align: center;
+    width: 25%;
+    border: 5px solid;
+    border-left-width: 0;
+    height: 120px;
+    display: inline-block;
+    background: rgba(150, 150, 150, 0.5);
+}
+
+.extra-display-inline-block:first-child {
+    border-left-width: 5px;
+}

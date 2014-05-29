@@ -1,0 +1,21 @@
+.example-container {
+    background: #cc0000;
+    margin: 10px;
+}
+
+.hidden-box, .none-box, .opacity-box {
+    width: 100px;
+    height: 100px;
+}
+
+.hidden-box {
+    visibility: hidden;
+}
+
+.none-box {
+    display: none;
+}
+
+.opacity-box {
+    opacity: 0;
+}

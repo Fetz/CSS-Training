@@ -1,0 +1,55 @@
+<!-- base html to use in the examples :: basic structure http://html5boilerplate.com/ -->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tags restrictions</title>
+        <meta name="description" content="some description here">
+
+        <!-- set mobile meta information like initial zoom, max/min zoom and width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="../basic.css">
+        <link rel="stylesheet" href="inline_vs_block.css">
+    </head>
+    <body>
+        <!-- inline -->
+        <article class="info-box">
+            <header>
+                <h1>Tags restrictions</h1>
+            </header>
+            <p>
+                Some tags have restrictions and can cause some error issues by the browser parser when fixing the wrong markup
+            </p>
+            <small>
+                watch out because with JS you still can hack and add a div element inside a p
+            </small>
+            <footer>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">more info</a>
+            </footer>
+        </article>
+
+
+        <!-- wrong markup -->
+        <section class="examples">
+            <p>
+                first paragraph
+                <div>div shouldn't be inside of paragraph compare inspector elements with source code</div>
+            </p>
+            <p>
+                second paragraph
+            </p>
+        </section>
+
+        <!-- wrong markup -->
+        <section class="examples">
+            <a>
+                <p></p>
+            </a>
+        </section>
+    </body>
+</html>
